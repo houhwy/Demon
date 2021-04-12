@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="Stu" class="gyb02.collectiontype.Stu">
+    <property name="course">
+        <array>
+            <value>java</value>
+            <value>算法</value>
+            <value>数据结构</value>
+        </array>
+    </property>
+    <property name="list">
+        <list>
+            <value>芊芊</value>
+            <value>21</value>
+            <value>水瓶</value>
+        </list>
+    </property>
+    <property name="map">
+        <map>
+            <entry key="芊芊" value="21"></entry>
+            <entry key="雯雯" value="21"></entry>
+        </map>
+    </property>
+    <property name="sets">
+        <set>
+            <value>我</value>
+            <value>艹</value>
+            <value>了</value>
+        </set>
+    </property>
+</bean>
+</beans>
