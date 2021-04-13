@@ -15,6 +15,7 @@
 <!--    <property name="password" value="123456"></property>-->
 <!--</bean>-->
     <!--引入外部属性文件-->
+    <context:component-scan base-package="gyb03"></context:component-scan>
     <context:property-placeholder location="jdbc.properties"></context:property-placeholder>
         <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${driver}"></property>
