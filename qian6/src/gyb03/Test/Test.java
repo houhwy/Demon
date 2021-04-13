@@ -14,4 +14,11 @@ public class Test {
         System.out.println(userService);
         userService.add();
     }
+    @org.junit.Test
+    public void SpringConfig(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean4.xml");
+        UserService userService=context.getBean("userService", UserService.class);
+        System.out.println(userService);
+        userService.add();
+    }
 }
