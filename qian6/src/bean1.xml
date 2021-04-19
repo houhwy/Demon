@@ -7,4 +7,8 @@
         <property name="bname" value="龙族"></property>
         <property name="bauthor" value="江南老贼"></property>
     </bean>
+    <bean id="order" class="gyb.Ordeers">
+        <constructor-arg name="oname" value="wenwen"></constructor-arg>
+        <constructor-arg name="adress" value="luoyang"></constructor-arg>
+    </bean>
 </beans>
