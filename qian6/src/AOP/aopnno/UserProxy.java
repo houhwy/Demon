@@ -3,7 +3,6 @@ package AOP.aopnno;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 //@Order(1)  设置优先级 值越小优先级越大

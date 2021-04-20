@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean name="Stu" class="gyb02.collectiontype.Stu">
+<bean name="Stu" class="IOC.gyb02.collectiontype.Stu">
     <property name="course">
         <array>
             <value>java</value>
