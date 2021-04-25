@@ -1,7 +1,9 @@
 package com.example.servl;
 
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 public class HelloS implements Servlet {
 
@@ -21,7 +23,16 @@ public class HelloS implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("啊~被访问了");
+//        System.out.println("啊~被访问了");
+        HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
+        String Method=httpServletRequest.getMethod();
+//        System.out.println(Method);
+        if("GET".equals(Method)){
+            System.out.println("get请求");
+        }
+        else if("POST".equals(Method)){
+            System.out.println("post请求");
+        }
     }
 
     @Override
