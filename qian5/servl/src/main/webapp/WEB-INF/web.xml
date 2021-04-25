@@ -11,4 +11,22 @@
         <servlet-name>HelloS</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloS01</servlet-name>
+        <servlet-class>com.example.servl.HelloS01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloS01</servlet-name>
+        <url-pattern>/hello01</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>HelloS02</servlet-name>
+    <servlet-class>com.example.servl.HelloS02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloS02</servlet-name>
+        <url-pattern>/hello02</url-pattern>
+    </servlet-mapping>
 </web-app>

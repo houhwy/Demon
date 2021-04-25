@@ -28,13 +28,19 @@ public class HelloS implements Servlet {
         String Method=httpServletRequest.getMethod();
 //        System.out.println(Method);
         if("GET".equals(Method)){
-            System.out.println("get请求");
+            doGet();
         }
         else if("POST".equals(Method)){
-            System.out.println("post请求");
+            doPost();
         }
     }
+public void doGet(){
+    System.out.println("get请求");
+}
+public void doPost(){
+    System.out.println("post请求");
 
+}
     @Override
     public String getServletInfo() {
         return null;
