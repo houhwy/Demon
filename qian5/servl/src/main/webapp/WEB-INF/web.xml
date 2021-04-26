@@ -3,6 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>雯雯</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>123456</param-value>
+    </context-param>
 <servlet>
     <servlet-name>HelloS</servlet-name>
     <servlet-class>com.example.servl.HelloS</servlet-class>
@@ -25,8 +34,16 @@
     <servlet-name>HelloS02</servlet-name>
     <servlet-class>com.example.servl.HelloS02</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ContestS</servlet-name>
+        <servlet-class>com.example.servl.ContestS</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloS02</servlet-name>
         <url-pattern>/hello02</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContestS</servlet-name>
+        <url-pattern>/contest</url-pattern>
     </servlet-mapping>
 </web-app>
