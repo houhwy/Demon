@@ -14,7 +14,7 @@ public class ContestS extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //1.获取上下文参数
-        ServletContext servletContext = getServletConfig(nnnn).getServletContext();
+        ServletContext servletContext = getServletConfig().getServletContext();
 
         String username = servletContext.getInitParameter("username");
 
