@@ -21,4 +21,39 @@
         <servlet-name>Paramater</servlet-name>
         <url-pattern>/pa</url-pattern>
     </servlet-mapping>
+
+  <servlet>
+      <servlet-name>Servlet01</servlet-name>
+      <servlet-class>com.example.servl01.Servlet01</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet01</servlet-name>
+        <url-pattern>/s01</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet02</servlet-name>
+        <servlet-class>com.example.servl01.Servlet02</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Respon01</servlet-name>
+        <servlet-class>com.example.servl01.Respon01</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Respon02</servlet-name>
+        <servlet-class>com.example.servl01.Respon02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet02</servlet-name>
+        <url-pattern>/s02</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Respon01</servlet-name>
+        <url-pattern>/res1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Respon02</servlet-name>
+        <url-pattern>/res2</url-pattern>
+    </servlet-mapping>
+
 </web-app>
