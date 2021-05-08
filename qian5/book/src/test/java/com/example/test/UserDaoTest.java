@@ -29,6 +29,6 @@ class UserDaoTest {
 
     @Test
     void saveUser() {
-        System.out.println(userDao.saveUser(new User(null,"lwy","123456","25838@qq.com")));
+        System.out.println(userDao.saveUser(new User(null,"wyq","123456","25838@qq.com")));
     }
 }
